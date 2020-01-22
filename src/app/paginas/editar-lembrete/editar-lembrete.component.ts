@@ -10,7 +10,7 @@ import { Lembrete } from '../../interfaces/lembrete';
   styleUrls: ['./editar-lembrete.component.css']
 })
 export class EditarLembreteComponent {
-  public lembrete: Lembrete;
+  public lembrete: Lembrete = <Lembrete>{};
   @ViewChild(ErrorMsgComponent) errorMsgComponent: ErrorMsgComponent;
 
   constructor(private lembreteService: LembreteService,
